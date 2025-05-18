@@ -29,8 +29,8 @@ TumorDetect AI leverages a TensorFlow-based deep learning Convolutional Neural N
 
 1. Clone the repository:
    ```
-   git clone https://github.com/KOSASIH/TumorDetect-AI.git
-   cd TumorDetect-AI
+   git clone https://github.com/KOSASIH/Brain-Tumor-MRI-Classifier.git
+   cd Brain-Tumor-MRI-Classifier
    ```
 
 2. Install dependencies:
