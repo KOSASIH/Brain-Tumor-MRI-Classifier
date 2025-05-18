@@ -13,8 +13,19 @@ app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg'}
 # Create uploads folder if it doesn't exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-# Load the model (will be implemented later)
-model = None
+# Load the model
+try:
+    from models.tumor_model import load_model
+    model_path = 'models/brain_tumor_model.h5'
+    if os.path.exists(model_path):
+        model = load_model(model_path)
+        print(f"Model loaded successfully from {model_path}")
+    else:
+        print(f"Model file not found at {model_path}. Running without model prediction.")
+        model = None
+except Exception as e:
+    print(f"Error loading model: {e}")
+    model = None
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']

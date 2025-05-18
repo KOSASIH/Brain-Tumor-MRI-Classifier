@@ -29,8 +29,8 @@ TumorDetect AI leverages a TensorFlow-based deep learning Convolutional Neural N
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/TumorDetect.git
-   cd TumorDetect
+   git clone https://github.com/KOSASIH/TumorDetect-AI.git
+   cd TumorDetect-AI
    ```
 
 2. Install dependencies:
@@ -40,7 +40,7 @@ TumorDetect AI leverages a TensorFlow-based deep learning Convolutional Neural N
 
 3. Run the application:
    ```
-   python app.py
+   python run.py
    ```
 
 4. Open your browser and navigate to:
